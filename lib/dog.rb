@@ -3,12 +3,13 @@ class TicTacToe
   def initialize(board = nil)
     # @board = board || Array.new(9, " ")
 
-    if board
-      @board = board
-    else
-      @board = Array.new(9, " ")
-    end
+    # if board
+    #   @board = board
+    # else
+    #   @board = Array.new(9, " ")
+    # end
 
+      @board = board? board : Array.new(9, " ")
 
 
   end
