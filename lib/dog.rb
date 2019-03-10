@@ -9,7 +9,7 @@ class TicTacToe
     #   @board = Array.new(9, " ")
     # end
 
-      board? board:Array.new(9, " ")
+      board?board:Array.new(9, " ")
 
 
   end
