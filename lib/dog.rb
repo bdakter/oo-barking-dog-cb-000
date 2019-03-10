@@ -1,36 +1,21 @@
+class Dog
 
-class TicTacToe
-  def initialize(board = nil)
-    # @board = board || Array.new(9, " ")
-
-    # if board
-    #   @board = board
-    # else
-    #   @board = Array.new(9, " ")
-    # end
-
-      board.nil? ? board:["X"]  #Array.new(9, " ")
-
-
+  def name=(new_name)
+    $name = new_name
   end
 
-
-  def current_player
-    turn_count % 2 == 0 ? "X" : "O"
+  def name
+    puts $name
   end
 
-  def turn_count
-    @board.count{|token| token == "X" || token == "O"}
-  end
-
-  def display_board
-    puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
-    puts "-----------"
-    puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
-    puts "-----------"
-    puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
-  end
 end
 
-game = TicTacToe.new(Array.new(4, "X"))
-game.display_board
+snoopy = Dog.new
+snoopy.name=("Snoopy")
+snoopy.name
+
+fido. = Dog.new
+fido.name=("Fido")
+fido.name
+
+snoopy.name
