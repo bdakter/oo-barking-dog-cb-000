@@ -14,7 +14,7 @@ snoopy = Dog.new
 snoopy.name=("Snoopy")
 snoopy.name
 
-fido. = Dog.new
+fido = Dog.new
 fido.name=("Fido")
 fido.name
 
