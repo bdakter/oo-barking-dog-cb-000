@@ -1,22 +1,8 @@
-class Dog
 
-  # def initialize(name)
-  #   @name = name
-  # end
+board = ["X", "O", "X"]
 
-  def name=(new_name)
-    @name = new_name
-  end
-
-  def name
-    @name
-  end
-
-  def bark
-    puts "woof!"
-  end
-
+def turn_count(board)
+  board.count{|token| token == "X" || token == "O"}
 end
 
-# fido = Dog.new("Fido")
-# p fido.name
+p turn_count(board)
