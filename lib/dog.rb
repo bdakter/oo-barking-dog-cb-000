@@ -1,7 +1,16 @@
 
 class TicTacToe
   def initialize(board = nil)
-    @board = board || Array.new(9, " ")
+    # @board = board || Array.new(9, " ")
+
+    if board
+      @board = board
+    else
+      @board = Array.new(9, " ")
+    end
+
+
+    
   end
 
 
@@ -22,5 +31,5 @@ class TicTacToe
   end
 end
 
-game = TicTacToe.new(Array.new(2,"X"))
+game = TicTacToe.new
 game.display_board
