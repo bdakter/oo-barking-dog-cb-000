@@ -5,4 +5,4 @@ def count(foo)
   foo.count{|num| num % 2 == 0}
 end
 
-p turn_count(board)
+p count(foo)
