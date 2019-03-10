@@ -1,5 +1,5 @@
 
-board = ["X", "O", "X"]
+board = ["X", "O", "X", "O"]
 
 def turn_count(board)
   board.count{|token| token == "X" || token == "O"}
