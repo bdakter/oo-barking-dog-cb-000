@@ -31,5 +31,5 @@ class TicTacToe
   end
 end
 
-game = TicTacToe.new
+game = TicTacToe.new(Array.new(4, "X"))
 game.display_board
